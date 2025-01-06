@@ -1,0 +1,75 @@
+.font-char-editor {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  // border: 1px solid red;
+
+  & nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid limegreen;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #333;
+    width: 100%;
+
+    & button {
+      border: none;
+      border-right: 1px solid #333;
+      border-left: 1px solid #333;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+
+    & sub, & sup {
+      font-size: 0.8rem;
+      color: cornflowerblue;
+    }
+  }
+
+  &__bitmap {
+    cursor: none;
+  }
+
+  &__row {
+    display: flex;
+
+    &--index {
+      font-size: 0.8rem;
+      padding: 0 10px;
+      color: #666;
+      width: 400px;
+      // text-align: right;
+    }
+  }
+
+  &__pix {
+    background-color: #202020;
+    border-right: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+    width: 18px;
+    aspect-ratio: 1;
+
+    &--guideline {
+      border: 1px dashed #444;
+    }
+
+    &.active {
+      background-color: cornflowerblue;
+    }
+
+    &:hover {
+      border: 1px dotted cornflowerblue;
+      filter: brightness(1.8);
+    }
+  }
+}

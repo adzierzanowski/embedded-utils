@@ -1,0 +1,117 @@
+#font-maker {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  flex-grow: 1;
+  height: 80vh;
+
+  & > div {
+    border: 1px solid #333;
+    flex-grow: 1;
+    display: flex;
+  }
+
+  & .tab__panel {
+    max-height: 70vh;
+    overflow-y: hidden;
+  }
+}
+
+#output-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+#output-panel > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+#settings-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#font-maker-output {
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+}
+
+#editor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#controls-container {
+  display: flex;
+
+  & .tabs, & .tabs__panels, & .tab__panel {
+    height: 100%;
+  }
+
+}
+
+#char-options {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+#char-list {
+  padding: 20px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.character {
+  border: 1px solid #333;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+
+  &.active {
+    border-color: cornflowerblue;
+  }
+
+  &:hover {
+    background-color: #444;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__symbol {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__code {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+
+  &__thumb canvas {
+    border: 1px dashed #666;
+  }
+}

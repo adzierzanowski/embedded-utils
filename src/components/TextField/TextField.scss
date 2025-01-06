@@ -1,0 +1,21 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  & > input {
+    border: none;
+    width: 100%;
+  }
+
+  &--error {
+    border-color: red;
+  }
+
+  &__error {
+    font-size: 0.6rem;
+    color: red;
+    padding: 2px 4px;
+  }
+}

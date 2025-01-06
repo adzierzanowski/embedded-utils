@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tabs__nav {
+  border-bottom: 1px solid #333;
+
+  & button {
+    border: none;
+    border-right: 1px solid #333;
+
+    &.active {
+      border-bottom: 1px solid cornflowerblue;
+    }
+  }
+}
+
+.tabs__panels {
+  padding: 10px;
+}

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282828;
+  font-family: 'Jetbrains Mono';
+  color: #aaa;
+}
+
+a {
+  color: cornflowerblue;
+}
+
+a:hover {
+  filter: brightness(1.5);
+}
+
+input, select, button, textarea {
+  background-color: transparent;
+  color: inherit;
+  font-family: 'Jetbrains Mono', monospace;
+  border: 1px solid #444;
+  padding: 5px 10px;
+}
+
+fieldset {
+  border-width: 1px;
+  border-color: #444;
+  border-style: dashed;
+  padding: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  & > legend {
+    font-size: 0.7rem;
+    padding: 0 10px;
+    color: #666;
+  }
+
+  & > input, & > select {
+    flex-grow: 1;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: #444;
+  }
+}
+
+#content {
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  width: 100%;
+}
+
+.quickrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  & > * {
+    flex-grow: 1;
+  }
+}

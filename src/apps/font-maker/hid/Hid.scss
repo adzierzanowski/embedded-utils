@@ -1,0 +1,40 @@
+.hid-device {
+  border: 1px solid #333;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__collection {
+    border: 1px solid #333;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+  &__collections {
+    border: 1px solid #333;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+  &__collection-input-reports {
+    border: 1px solid #333;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+  &__collection-output-reports {
+    border: 1px solid #333;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+}

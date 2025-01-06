@@ -1,0 +1,42 @@
+.toggle {
+  border: 1px dashed #666;
+  border-radius: 10px;
+  padding: 8px 20px;
+  width: max-content;
+  font-size: 0.7rem;
+  // text-decoration: line-through;
+  color: #666;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  position: relative;
+
+  &:hover {
+    border-color: #aaa;
+  }
+
+  &--checked {
+    color: cornflowerblue;
+    text-decoration: none;
+    border: 1px solid cornflowerblue;
+
+    &:hover {
+      border-color: cornflowerblue;
+      border-style: dashed;
+    }
+  }
+
+  &__mark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #666;
+    top: 4px;
+    right: 4px;
+    border-radius: 10px;
+
+    &--checked {
+      background-color: greenyellow;
+    }
+  }
+}
