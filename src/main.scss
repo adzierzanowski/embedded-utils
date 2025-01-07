@@ -33,6 +33,10 @@ fieldset {
   justify-content: center;
   align-items: center;
 
+  &.block {
+    display: flex;
+  }
+
   & > legend {
     font-size: 0.7rem;
     padding: 0 10px;
@@ -41,6 +45,7 @@ fieldset {
 
   & > input, & > select {
     flex-grow: 1;
+    border: none;
   }
 }
 
@@ -66,6 +71,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  width: 100%;
 
   & > * {
     flex-grow: 1;

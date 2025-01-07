@@ -1,0 +1,90 @@
+#hid-app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#hid-app-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+}
+
+.hid-device {
+  border: 1px solid #333;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__collection {
+    border: 1px solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__collection-reports {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  &__collections {
+    border: 1px solid #333;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+  &__report {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__report-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  &__report-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__report-item-attrs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 8px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  &__report-item-attr {
+    background-color: #222;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: max-content;
+    font-size: 0.8rem;
+  }
+}
