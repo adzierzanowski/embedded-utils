@@ -12,6 +12,7 @@ export const CharactersPanel = ({activePanel}: CharactersPanelProps) => {
   const showLabels = useSetting('showLabels', true)
 
   const activeCharChange = useEvent('FMActiveCharChange')
+  activeCharChange;
 
 
   return (

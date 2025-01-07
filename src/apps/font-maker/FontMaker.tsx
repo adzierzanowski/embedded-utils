@@ -6,7 +6,6 @@ import { CharactersPanel } from "./CharactersPanel";
 import { OutputPanel } from "./OutputPanel";
 import { SettingsPanel } from "./SettingsPanel";
 import { useFontMakerService } from "./services/ServiceProviders";
-import { FMEventKindDef } from "./services/FMEvent";
 
 export const FontMaker = () => {
   const panels: TabsPanel[] = [

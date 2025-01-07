@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react"
 import { useBEM } from "../../utils"
 import { FontChar } from "./services/FontChar"
 import { useFontMakerService } from "./services/ServiceProviders"
-import { FontMakerEvent, FMEventKindDef } from "./services/FMEvent"
 
 export type FontCharProps = {
   char: FontChar

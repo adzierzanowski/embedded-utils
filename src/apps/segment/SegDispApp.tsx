@@ -123,7 +123,7 @@ export const SegDispApp = () => {
           gap: '10px'
         }}
       >
-        <button onClick={e => {
+        <button onClick={() => {
           navigator.clipboard.writeText(snaps.map(snap => toPyArray(snap)).join(',\n'))
         }}>Copy</button>
         <button onClick={() => setSnaps([])}>Clear</button>

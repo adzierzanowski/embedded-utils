@@ -1,4 +1,3 @@
-import { SetStateAction, useEffect, useState } from "react";
 import { FMSettingKey, FMSettings, FMSettingState, FMSettingVal } from "./FMSetting";
 import { FontMakerEvent } from "../FMEvent";
 

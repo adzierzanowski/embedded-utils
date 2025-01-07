@@ -1,5 +1,3 @@
-import { FontOutputFormat, FontOutputFormatDef } from "../Font"
-
 export interface FMSetting<T> {
   label: string
   defaultValue: T

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HidCollection, HidDevice } from "./HidDevice";
+import { HidDevice } from "./HidDevice";
 import './Hid.scss'
 
 export const HidApp = () => {
