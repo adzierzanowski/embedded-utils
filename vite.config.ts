@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true
     }
   },
-  build: {outDir: 'docs'},
+  build: {outDir: 'docs', assetsDir: 'embedded-utils'},
   plugins: [react()],
 })
